@@ -1,8 +1,14 @@
-create table if not exists cidades (
+CREATE TABLE IF NOT EXISTS cidades (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome varchar(255) not null,
-    estado_id int unsigned not null,
-    area decimal(10, 2),
-    primary key(id),
-    foreign key(estado_id) references estados(id)
+    nome VARCHAR(255) NOT NULL,
+    estado_id int unsigned NOT NULL,
+    area DECIMAL(10,2),
+    PRIMARY KEY (id),
+    FOREIGN KEY (estado_id) REFERENCES estados (id)
 );
+
+-- CREATE TABLE IF NOT EXISTS teste (
+--     id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY
+-- );
+
+-- DROP TABLE IF EXISTS teste;
