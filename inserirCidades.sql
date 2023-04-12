@@ -9,7 +9,7 @@ values('Niterói', 133.9, 25);
 insert into cidades(nome,area,estado_id)
 values(
     'Caruaru', 920.5,
-    (select id from estados where sigla = 'PE')
+    (select id fr   om estados where sigla = 'PE')
     );
 
 
